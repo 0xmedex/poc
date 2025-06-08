@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #fff3cd; stroke: #ffeeba; stroke-width: 2; }
+    .title { fill: #856404; font-size: 18px; font-weight: bold; font-family: sans-serif; }
+    .msg { fill: #856404; font-size: 14px; font-family: sans-serif; }
+    .btn { fill: #c82333; }
+    .btn-text { fill: white; font-size: 14px; font-family: sans-serif; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <!-- Background warning box -->
+  <rect x="10" y="10" width="380" height="200" rx="10" class="bg"/>
+
+  <!-- Title -->
+  <text x="30" y="50" class="title">⚠️ Session Expired</text>
+
+  <!-- Message -->
+  <text x="30" y="80" class="msg">Your session has expired for security reasons.</text>
+  <text x="30" y="100" class="msg">Please login again to continue using your account.</text>
+
+  <!-- Fake button wrapped with <a> -->
+  <a xlink:href="https://example.com/" target="_top">
+    <rect x="30" y="140" width="340" height="40" rx="5" class="btn"/>
+    <text x="200" y="165" class="btn-text">🔐 Re-Login Now</text>
+  </a>
+</svg>
