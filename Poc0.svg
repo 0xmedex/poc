@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="150">
+  <text x="10" y="30" font-size="16" fill="black">⚠️ Your session has expired.</text>
+  <text x="10" y="60" font-size="14" fill="black">Please login again at the link below:</text>
+  
+  <a xlink:href="https://example.com/login" target="_top">
+    <text x="10" y="90" font-size="14" fill="blue">https://example.com/login</text>
+  </a>
+</svg>
