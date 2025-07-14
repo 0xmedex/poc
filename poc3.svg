@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="300" height="100">
   <a xlink:href="javascript:alert('XSS')" target="_top">
     <text x="10" y="50" font-size="20" fill="blue">click</text>
   </a>
